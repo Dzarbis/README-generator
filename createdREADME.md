@@ -1,5 +1,4 @@
-function generateMarkdown(data) {
-  return `# ${data.title}
+# README generator
   
   # Table of Contents
   1) [Description](#Description)
@@ -11,32 +10,28 @@ function generateMarkdown(data) {
   7) [Questions](#Questions)
 
   ## Description
-  ${data.description}
+  Creates README's
 
   ## Usage
-  ${data.usage}
+  Convenience for README creation.
 
   ## Installation
-  ${data.installation}
+  See video.
 
   ## Contributions
-  ${data.contributions}
+  n/a
 
   ## Licenses
-  ${data.licenses}
+  None
 
   ## Tests
-  ${data.tests}
+  Carefully
 
   ## Questions
 
   ### GitHub Profile
-  ${data.username}(http://github.com/${data.username})
+  Dzarbis(http://github.com/Dzarbis)
 
   ### Email
-  ${data.email}
+  dzarbis@gmail.com
 
-`;
-}
-
-module.exports = generateMarkdown;

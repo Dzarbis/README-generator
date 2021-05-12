@@ -1,10 +1,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./Develop/utils/generateMarkdown')
 
 const questions = [
     {
         type: 'input',
-        name: 'github',
+        name: 'title',
+        message: 'What is your project titled?'
+    },
+    {
+        type: 'input',
+        name: 'username',
         message: 'What is your GitHub username?'
     },
     {
@@ -14,13 +20,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'project',
-        message: 'What is your project titled?'
+        name: 'description',
+        message: 'Please provide a brief description of your project.'
     },
     {
         type: 'input',
-        name: 'description',
-        message: 'Please provide a brief description of your project.'
+        name: 'usage',
+        message: 'Please provide a brief list of benefits your project provides.'
     },
     {
         type: 'input',
@@ -29,29 +35,31 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'Please provide a brief list of benefits your project provides.'
+        name: 'contributions',
+        message: 'Please list any contributors to your project, or n/a if there are none.'
     },
     {
         type: 'list',
         name: 'licenses',
         message: 'Which license(s) does your project use?',
-        choices: ['MIT License', 'APACHE 2.0', 'None']
+        choices: ['MIT License', 'GNUGPLv3', 'None']
     },
     {
         type: 'input',
-        name: 'contributions',
-        message: 'Please list any contributors to your project, or n/a if there are none.'
-    },
-    {
-        type: 'input',
-        name: 'test',
+        name: 'tests',
         message: 'How was this project tested?'
     }
 ]
 
-const promptUser = () => {
-    return inquirer.prompt(questions)
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(fileName, data)
 }
 
-promptUser().then(answers => console.log(answers));
+function promptUser() {
+    inquirer.prompt(questions)
+        .then((data) => writeToFile('createdREADME.md', generateMarkdown(data)))
+        .then(() => console.log('README created!'))
+        .catch((err) => console.log(err))
+}
+
+promptUser();
