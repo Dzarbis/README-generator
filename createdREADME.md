@@ -1,4 +1,4 @@
-# README generator
+# Magic
   
   # Table of Contents
   1) [Description](#Description)
@@ -10,19 +10,19 @@
   7) [Questions](#Questions)
 
   ## Description
-  Creates README's
+  It does stuff and things.
 
   ## Usage
-  Convenience for README creation.
+  Better stuff! and things!!!
 
   ## Installation
-  See video.
+  See Video
 
   ## Contributions
   n/a
 
   ## Licenses
-  None
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT
 
   ## Tests
   Carefully
