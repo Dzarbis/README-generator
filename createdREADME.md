@@ -1,4 +1,4 @@
-# README Generator
+# c
   
   # Table of Contents
   1) [Description](#Description)
@@ -10,28 +10,28 @@
   7) [Questions](#Questions)
 
   ## Description
-  An app to generate a professional README for a user's project.
+  c
 
   ## Usage
-  Quick and easy README creation.
+  c
 
   ## Installation
-  See Video
+  c
 
   ## Contributions
-  n/a
+  c
 
   ## Licenses
-  [!License: MIT(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Tests
-  Trial and error
+  c
 
   ## Questions
 
   ### GitHub Profile
-  Dzarbis(http://github.com/Dzarbis)
+  c(http://github.com/c)
 
   ### Email
-  dzarbis@gmail.com
+  c
 
