@@ -1,4 +1,4 @@
-# f
+# README Generator
   
   # Table of Contents
   1) [Description](#Description)
@@ -10,28 +10,29 @@
   7) [Questions](#Questions)
 
   ## Description
-  f
+  A README Generator that provides users with a professional README for all projects.
 
   ## Usage
-  f
+  Quick and easy setup for README generation.
 
   ## Installation
-  f
+  Clone repo, use command line to install Inquirer and FS.
+  [Video](https://drive.google.com/file/d/1U3pMTVMmUscrAVSFgp-EA1xSUfZom5PG/preview)
 
   ## Contributions
-  f
+  n/a
 
   ## Licenses
-  [![License: GNUGPLv3](https://img.shields.io/badge/License-GNUGPL-green.svg)](https://https://opensource.org/licenses/gpl-license)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Tests
-  f
+  Trial and error
 
   ## Questions
 
   ### GitHub Profile
-  f(http://github.com/f)
+  Dzarbis(http://github.com/Dzarbis)
 
   ### Email
-  f
+  dzarbis@gmail.com
 
