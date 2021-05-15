@@ -1,7 +1,10 @@
 function generateMarkdown(data) {
   if (data.licenses === "MIT License") {
-    data.licenses = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    data.licenses = "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)";
   }
+  if (data.licenses === "GNUGPLv3") {
+    data.licenses = "[![License: GNUGPLv3](https://img.shields.io/badge/License-GNUGPL-green.svg)](https://https://opensource.org/licenses/gpl-license)";
+  } 
 
   return `# ${data.title}
   
